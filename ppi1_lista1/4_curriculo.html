@@ -4,32 +4,38 @@
         <title>Currículo HTML com Elementos de Estrutura e Formatação </title>
         <style>
   img {
-            width: 150px;
-            border-radius: 10px;
+            width: 400px;
+            border: 50px;
         }
 
         table, td, th {
             border: 1px solid black;
-            border-collapse: collapse;
-            padding: 5px;
+             border-collapse: collapse
         }
 
         th {
             background-color: lightgray;
         }
+
+        body{
+            background-color: lightpink;
+        }
+        
+
+        
     </style>
 </head>
 
 <body>
 
-<p style="background-color: lightgray; padding:10px;">
+<p style="background-color: lightpink; padding:10px;">
     <a href="#contato">Contato</a> |
     <a href="#habilidades">Habilidades</a> |
     <a href="#formacao">Formação</a> |
     <a href="#experiencia">Experiência</a>
 </p>
 
-<div>
+<div style="text-align: center;">
     <h1>Sofia Pascoalini</h1>
     <img src="WhatsApp Image 2026-03-19 at 22.17.40.jpeg" alt="Foto de perfil">
 </div>
@@ -50,18 +56,50 @@
     <p>
         Sou uma estudante dedicada, interessada em <strong>tecnologia</strong> e <em>programação</em>.
         Tenho facilidade em aprender e gosto de desafios. Atualmente estudo desenvolvimento web e 
-        tenho interesse em <mark>inteligência artificial</mark>.
+        tenho interesse em <mark>aprender flluter</mark>.
     </p>
 </div>
+
+<details>
+    <summary>Mais informações</summary>
+    <p>Gosto de viajar e aprender novas línguas</p>
+</details>
+
+<h2>Grade de Horários</h2>
+<table>
+    <tr>
+        <th>Dia</th>
+        <th>Matéria</th>
+        <th>Horário</th>
+    </tr>
+
+    <tr>
+        <td>Segunda</td>
+        <td>Matemática</td>
+        <td>08:00</td>
+    </tr>
+
+    <tr>
+        <td>Terça</td>
+        <td>Programação</td>
+        <td>10:00</td>
+    </tr>
+
+    <tr>
+        <td>Quarta</td>
+        <td>Projeto Integrador</td>
+        <td>09:00</td>
+    </tr>
+</table>
 
 
 <div id="habilidades">
     <h2>Habilidades</h2>
     <ul>
-        <li>HTML e CSS</li>
-        <li>Java básico</li>
+        <li>HTML</li>
+        <li>Java </li>
         <li>Python</li>
-        <li>Organização e trabalho em equipe</li>
+        <li>Caprichosa e dedicada</li>
         <li>Trabalhar com o público</li>
     </ul>
 </div>
@@ -69,10 +107,10 @@
 <section id="formacao">
     <h2>Formação Acadêmica</h2>
 
-    <article>
+    <div>
         <p><strong>Ensino Médio</strong> - Em andamento</p>
         <p>Instituto Federal de Santa Catarina- 2023 - 2026</p>
-    </article>
+    </div>
 
 </section>
 
@@ -97,33 +135,7 @@
 </div>
 
 
-<h2>Grade de Horários</h2>
 
-<table>
-    <tr>
-        <th>Dia</th>
-        <th>Matéria</th>
-        <th>Horário</th>
-    </tr>
-
-    <tr>
-        <td>Segunda</td>
-        <td>Matemática</td>
-        <td>08:00</td>
-    </tr>
-
-    <tr>
-        <td>Terça</td>
-        <td>Programação</td>
-        <td>10:00</td>
-    </tr>
-
-    <tr>
-        <td>Quarta</td>
-        <td>História</td>
-        <td>09:00</td>
-    </tr>
-</table>
 
 
 <div>
@@ -134,10 +146,7 @@
 </div>
 
 
-<details>
-    <summary>Mais informações</summary>
-    <p>Gosto de aprender novas tecnologias e desenvolver projetos.</p>
-</details>
+
         
     </body>
 </html>
