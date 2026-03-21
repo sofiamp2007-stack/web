@@ -1,40 +1,43 @@
 body{
-    background-color: turquoise;
+    background-color: lightgrey;
     font-family: Arial, sans-serif;
-    color: darkslategray;
+    color: black;
 }
 
-a{
-    color: blue;
-}
-table, td, th, tr{
-    border-collapse: collapse;
-    border: 2px solid;
-    width: 2px;
-    padding: 1cm;
-}
+    table{
+    border-collapse: collapse;}
 
-form {
-  margin-top: 20px;
+table,tr,th,td {
+     border:1px solid #000000;
+     padding : 3px;
+
 }
 
 input, select, textarea {
-  border-radius: 8px;
-  padding: 8px;
-  margin-bottom: 10px;
-  width: 100%;
-  border: 1px solid #ccc;
+    border-radius: 10px;     
+    padding: 8px;            
+    margin-bottom: 10px;     
+    border: 1px solid white;
+    background-color: pink;
 }
 
 button {
-  background-color: #0066cc;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+    background-color: hotpink;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: hotpink;
+    text-decoration: underline;
 }
 
 button:hover {
-  background-color: #004499;
+    background-color: lightblue;
 }

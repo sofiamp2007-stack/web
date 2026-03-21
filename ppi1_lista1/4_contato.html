@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <link rel="stylesheet" href= "style.css"> 
+
     <style>
         #titulo{color:pink;}
-        #top{  border:1px solid black;
+        #top{  border:3px solid black;
             box-shadow: 10px 2px gray;
-            display: inline-block;}
+            display: inline-block;
+            border-radius: 30 px;
+            padding: 20px;
+            }
     </style>
 </head>
 <body>
 
     <h1 id="titulo">Formulário de Contato</h1>
-    <p> Preencha com os dado necessários</p>
+    <p> Preencha com os dados necessários</p>
     <p><a href="4_curriculo.html">Voltar para o curriculo</a> </p>
 
     <form>
@@ -28,7 +33,7 @@
          <input type="email" id="email" email="email"
          placeholder="Digite o e-mail" required> <br><br>
 
-         <label for="Assunto">Assunto</label><br>
+         <label for="assunto">Assunto</label><br>
          <input type="assunto" id="assunto" assunto="assunto"
          placeholder="Digite o assunto" > <br><br>
 
@@ -40,7 +45,7 @@
         <option value = "RS">Rio Grande do Sul</option>
     </select><br><br>
 
-      <label for="Mensagem">Menssagem</label><br>
+      <label for="mensagem">Menssagem</label><br>
          <input type="mensagem" id="mensagem" mensagem="mensagem"
          placeholder="Digite a mensagem" > <br><br>
 
