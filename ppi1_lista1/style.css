@@ -1,43 +1,42 @@
-body{
-    background-color: lightgrey;
-    font-family: Arial, sans-serif;
-    color: black;
-}
+    body{
+        background-color: lightgrey;
+        font-family: Arial, sans-serif;
+        color: black;
+    }
 
     table{
-    border-collapse: collapse;}
+        border-collapse: collapse;}
 
-table,tr,th,td {
-     border:1px solid #000000;
-     padding : 3px;
+    table,tr,th,td {
+        border:1px solid #000000;
+        padding : 3px;
+    }
 
-}
+    input, select, textarea {
+        border-radius: 20px;     
+        padding: 10px;            
+        margin-bottom: 10px;     
+        border: 2px solid white;
+        background-color: pink;
+    }
 
-input, select, textarea {
-    border-radius: 10px;     
-    padding: 8px;            
-    margin-bottom: 10px;     
-    border: 1px solid white;
-    background-color: pink;
-}
+    button {
+        background-color: hotpink;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+    }
 
-button {
-    background-color: hotpink;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
-}
+    a {
+        color: black;
+    }
 
-a {
-    color: black;
-}
+    a:hover {
+        color: hotpink;
+        text-decoration: underline;
+    }
 
-a:hover {
-    color: hotpink;
-    text-decoration: underline;
-}
-
-button:hover {
-    background-color: lightblue;
-}
+    button:hover {
+        background-color: lightblue;
+    }
