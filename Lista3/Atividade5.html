@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:flex;
+            flex-direction: column;
+        }
+
+        #centro{
+            display:flex;
+            flex-direction: row;
+            height: 400px;
+        }
+
+        #header{
+            display:flex;
+            justify-content: flex-start;
+            align-items:flex-start;
+            height: 100px;
+            background-color: green;
+             padding: 10px;
+           
+           
+        }
+
+        #footer{
+            display:flex;
+            justify-content: flex-start;
+            align-items:flex-start;
+            height: 100px;
+            background-color: green;
+            padding: 10px;
+           
+        }
+
+        #article{
+            display:flex;
+            justify-content: flex-start;
+            align-items:flex-start;
+            flex: 3;
+            background-color: aliceblue;
+            padding: 10px;
+           
+        }
+
+    
+        #aside{
+              display:flex;
+            justify-content: flex-start;
+            align-items:flex-start;
+            flex:1;
+            background-color: grey;
+            padding: 10px;
+           
+        }
+
+        #nav{
+            display:flex;
+            justify-content: flex-start;
+            align-items:flex-start;
+             flex: 1;
+            background-color: pink;
+            padding: 10px;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="box"  id="header"> Header </div>
+
+        <div class="box"  id="centro"> 
+            <div class="box"  id="article"> Article</div>
+            <div class="box"  id="aside">Aside</div>
+            <div  class="box"  id="nav">Nav</div>
+
+            </div>
+       
+        <div class="box"  id="footer"> Footer </div>
+    </div>
+</body>
+</html>

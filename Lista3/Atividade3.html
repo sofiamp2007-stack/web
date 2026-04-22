@@ -21,58 +21,94 @@
             flex-direction: column;
             align-items: flex-start;
             gap: 30px;
-            width: 100%;
-            max-width: 300px;
+            width: 200px;
             height: 500px;
             padding: 30px;
             background-color: white;
         }
-        #box1{
-            width: 100px;
-            height: 100px;
-            background-image:url("Daniel.jpg");
-            background-size: cover;
-            border-radius: 50%;
 
+        .box{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        border-bottom: 2px solid gray;
         }
 
-        #box2{
-            width: 100px;
-            height: 100px;
-            background-image:url("Daniel.jpg");
-            background-size: cover;
-            border-radius: 50%;
+        #foto1 {
+            width: 60px;
+            height: 60px;
+             background-image: url("Daniel.jpg");
+             background-size: cover;
+             border-radius: 50%;
+            }
 
+        #foto2 {
+            width: 60px;
+            height: 60px;
+             background-image: url("Inverno.jpg");
+             background-size: cover;
+             border-radius: 50%;
+            }
+
+        #foto3{
+            width:60px;
+            height:60px;
+            background-image: url("montanha.jpg");
+            background-size: cover;
+            border-radius: 50%;;
         }
 
-         #box3{
-            width: 100px;
-            height: 100px;
-            background-image:url("Daniel.jpg");
+         #foto4{
+            width:60px;
+            height:60px;
+            background-image: url("Primavera.jpg");
             background-size: cover;
-            border-radius: 50%;
-
+            border-radius: 50%;;
         }
 
-         #box4{
-            width: 100px;
-            height: 100px;
-            background-image:url("Daniel.jpg");
-            background-size: cover;
-            border-radius: 50%;
+       
 
-        }
+
 
 
         
     </style>
 </head>
 <body>
-    <div class="container"> 
-        <div  class="box"  id=box1></div>
-        <div  class="box"  id=box2></div>
-        <div  class="box"  id=box3></div>
-        <div  class="box"  id=box4></div>
+     
+<div class="container">
+
+    <div class="box">
+        <div class="foto" id="foto1"></div>
+    <div>
+            <h3>Daniel Tiedt</h3>
+            <p>6765 Shady Ln</p>
+        </div>
+    </div>
+        
+      <div class="box">
+        <div class="foto" id="foto2"></div>
+        <div>
+            <h3>Inverno</h3>
+            <p>2420 Paddock</p>
+        </div>
+    </div>
+
+        <div  class="box">
+            <div class="foto" id="foto3"> </div>
+            <div> <h3>Montanha</h3>
+                <p>6727 Airplane</p>
+            </div>
+        </div>
+
+        <div  class="box">
+            <div class="foto" id="foto4"></div>
+            <div>
+                <h3>Primavera</h3>
+                <p>6685 Blossom</p>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
