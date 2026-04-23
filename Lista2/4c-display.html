@@ -29,12 +29,11 @@
               bottom:0px;
               left:0px;
              }
-        #box3{position:fixed;
+        #box3{background-color: brown;
+              position:fixed;
               bottom:0px;
               right:0px;
-              font-size:50pt;
-             transform :translate(rotate(45deg));
-             animation: lancamento 10s ease-in 0s 1;}
+             }
 
         #box4{background-color: blue;
               position:fixed;
@@ -45,30 +44,14 @@
           position:fixed;
               top:0px;
               right:0px;
-              animation: rotacao 5s linear 0s infinite
-              /*name duration timing-function deplay
-                iteration-count direction fill-mode;  */}
+            }
             
-                @keyframes lancamento{
-                    0%{
-                        bottom:0px;
-                    }
-                    100%{
-                        bottom:700px;
-                        left:1000px;
-                    }
-                }
-              @keyframes rotacao{
-                0%{}
-
-                100%{transform:rotate(360deg);}
-              }
     </style>
 </head>
 <body>
     <div id="box1" class="box">1</div>
     <div id="box2" class="box">2</div>
-    <div id="box3" class="">🚀</div>
+    <div id="box3" class="box">3</div>
     <div id="box4" class="box">4</div>
     <div id="box5" class="box">5</div>
     
