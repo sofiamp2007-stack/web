@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+             height: 100vh;
+        }
+        
+        #box1{
+            display:flex;
+            border-radius: 10%;
+            background-color: aquamarine;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            height: 100px;
+            width: 250px;
+            animation: mudacor 5s infinite
+        }
+
+        #box1::before{
+            content: "";
+            position: absolute;
+            left:10px;
+        }
+
+        #box1::after{
+            content: "🌸";
+        }
+
+        .box:hover{
+            transition: all 2s;
+            font-size:2em
+        }
+     
+       
+
+        
+
+        @keyframes mudacor{
+            from{
+                background-color: aquamarine;
+            }
+            to{
+                background-color: pink;
+            }
+
+        }
+    </style>
+</head>
+<body>
+     <div id="box1" class="box"> Passe o mouse aqui</div>
+     
+</body>
+</html>
