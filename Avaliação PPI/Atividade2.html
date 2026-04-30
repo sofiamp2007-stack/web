@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
-        body{
-            display:flex;
+        
+        .container{
+            display: flex;
             align-items: center;
+            height: 100vh;
             justify-content: center;
-             height: 100vh;
         }
         
         #box1{
@@ -19,16 +19,15 @@
             background-color: aquamarine;
             justify-content: center;
             align-items: center;
-            align-content: center;
             height: 100px;
             width: 250px;
-            animation: mudacor 5s infinite
+            animation: mudacor 5s infinite;
         }
 
+
+
         #box1::before{
-            content: "";
-            position: absolute;
-            left:10px;
+            content: "🌸";
         }
 
         #box1::after{
@@ -40,9 +39,7 @@
             font-size:2em
         }
      
-       
 
-        
 
         @keyframes mudacor{
             from{
@@ -56,7 +53,13 @@
     </style>
 </head>
 <body>
-     <div id="box1" class="box"> Passe o mouse aqui</div>
+    
+     <div id="texto"><h1> O que é uma regra css?</h1>
+     <p> Uma regra CSS é utilizada para estilizar um elemento do HTML e mudar a  forma como ele é exibido. Suas partes seriam o seletor que é responsável por indicar, “chamar” o elemento que irá sofrer a mudança. As propriedades são o que será mudado no elemento, como cor, alinhamento, espaçamento, entre outros. E os valores dão como o nome já diz,  um valor às propriedades, como a escolha da cor azul e o alinhamento do texto ao centro, por exemplo.
+</p></div>
+ <div class="container">
+ <div id="box1" class="box"> Exemplo de regras CSS</div>
+</div>
      
 </body>
 </html>
