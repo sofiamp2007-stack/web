@@ -14,12 +14,12 @@
          .container{
             display:grid;
             
-             height: 90vh;
+             height: 100vh;
    
         
             
             grid-template-rows: 1fr 2fr 1fr;
-            grid-template-columns: 2fr 3fr 2fr 1fr;
+            grid-template-columns: 2fr 2fr 2fr 1fr;
             grid-template-areas: "a b c c"
                                  "d b e f"
                                  "g g e f";
@@ -27,7 +27,7 @@
         }
         
 
-            @media (max-width:500px) {
+            @media (max-width:600px) {
             .container{
             display:grid;
             
@@ -39,7 +39,7 @@
                                  "d"
                                  "e"
                                  "f"
-                                " g";
+                                "g";
 
             }
         }

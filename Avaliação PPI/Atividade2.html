@@ -16,7 +16,7 @@
         #box1{
             display:flex;
             border-radius: 10%;
-            background-color: aquamarine;
+            background-color: aquamarine; /* exemplo CSS com seletor, propriedades e valores*/
             justify-content: center;
             align-items: center;
             height: 100px;
@@ -24,6 +24,16 @@
             animation: mudacor 5s infinite;
         }
 
+        
+        @keyframes mudacor{
+            from{
+                background-color: aquamarine;
+            }
+            to{
+                background-color: pink;
+            }
+
+        }
 
 
         #box1::before{
@@ -34,29 +44,18 @@
             content: "🌸";
         }
 
-        .box:hover{
+        #box1:hover{
             transition: all 2s;
             font-size:2em
         }
-     
 
-
-        @keyframes mudacor{
-            from{
-                background-color: aquamarine;
-            }
-            to{
-                background-color: pink;
-            }
-
-        }
     </style>
 </head>
 <body>
     
      <div id="texto"><h1> O que é uma regra css?</h1>
-     <p> Uma regra CSS é utilizada para estilizar um elemento do HTML e mudar a  forma como ele é exibido. Suas partes seriam o seletor que é responsável por indicar, “chamar” o elemento que irá sofrer a mudança. As propriedades são o que será mudado no elemento, como cor, alinhamento, espaçamento, entre outros. E os valores dão como o nome já diz,  um valor às propriedades, como a escolha da cor azul e o alinhamento do texto ao centro, por exemplo.
-</p></div>
+     <p> Uma regra CSS é utilizada para estilizar um elemento do HTML e mudar a  forma como ele é exibido. Suas partes seriam o seletor que é responsável por indicar, “chamar” o elemento que irá sofrer a mudança. As propriedades são o que será mudado no elemento, como cor, alinhamento, espaçamento, entre outros. E os valores dão como o nome já diz,  um valor às propriedades, como a escolha da cor azul e o alinhamento do texto ao centro, por exemplo.</p>
+    </div>
  <div class="container">
  <div id="box1" class="box"> Exemplo de regras CSS</div>
 </div>

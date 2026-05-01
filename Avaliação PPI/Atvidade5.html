@@ -7,23 +7,27 @@
     <style>
         body{
             
-    height: 95vh;
+        height: 100vh;
    
-}
+        }
         
 
          .container{
             display:grid;
-             height: 90vh;
+             height: 100vh;
    
         
             
-            grid-template-rows: 100fr 200fr 100fr;
-            grid-template-columns: 200fr 300fr 200fr 100fr;
+            grid-template-rows: 1fr 2fr 1fr;
+            grid-template-columns: 2fr 2fr 2fr 1fr;
             grid-template-areas: "a b c c"
                                  "d b e f"
                                  "g g e f";
 
+        }
+
+        .box {
+             margin: 5px;   
         }
         
         #box1{ grid-area: a;
@@ -31,7 +35,7 @@
             align-items: space;
             justify-content: center;
             background-color: orange;
-            border: 10px solid white;
+            
               }
         
         #box2{ grid-area: b;
@@ -39,7 +43,7 @@
             align-items: center;
             justify-content: center;
              background-color: pink;
-            border: 10px solid white;}
+           }
 
         
         #box3{ grid-area: c;
@@ -47,7 +51,7 @@
             align-items: center;
             justify-content: center;
             background-color: lightblue;
-           border: 10px solid white;
+          
         }
 
         #box4{ grid-area: d;
@@ -55,7 +59,7 @@
             align-items: center;
             justify-content: center;
              background-color: lightgray;
-             border: 10px solid white;
+            
             }
              
 
@@ -64,7 +68,7 @@
             align-items: center;
             justify-content: center;
             background-color: lightgreen;
-            border: 10px solid white;
+            
        }
 
        #box6{ grid-area: f;
@@ -73,14 +77,14 @@
             align-items: center;
             justify-content: space-around;
             background-color: white;
-          border: 10px solid white;
+        
        }
        #box7{ grid-area: g;
             display:flex;
             align-items: center;
             justify-content: center;
             background-color: lightsalmon;
-           border: 10px solid white;
+           
        }
        
        #bolinha1{ 
