@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            
+        height: 100vh;
+   
+        }
+        
+
+         .container{
+            display:grid;
+             height: 100vh;
+   
+        
+            
+            grid-template-rows: 1fr 2fr 1fr;
+            grid-template-columns: 2fr 2fr 2fr 1fr;
+            grid-template-areas: "a b c c"
+                                 "d b e f"
+                                 "g g e f"
+
+
+        }
+
+        .box{
+                margin:5px;
+        }
+
+        #box1{ grid-area: a;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background-color: orange;
+            
+              }
+        
+        #box2{ grid-area: b;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+             background-color: pink;
+           }
+
+        
+        #box3{ grid-area: c;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background-color: lightblue;
+          
+        }
+
+        #box4{ grid-area: d;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+             background-color: lightgray;
+            
+            }
+             
+
+        #box5{ grid-area: e;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background-color: lightgreen;
+            
+       }
+
+       #box6{ grid-area: f;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            background-color: white;
+        
+       }
+       #box7{ grid-area: g;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background-color: lightsalmon;
+           
+       }
+       
+       #bolinha1{ 
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background-color: lightsalmon;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+       }
+
+       #bolinha2{ 
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background-color: grey;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+       }
+
+       #bolinha3{ 
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background-color: lightgreen;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+       }
+
+       #bolinha4{ 
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background-color: plum;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+       }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div id="box1" class="box"> <a href="https://www.w3.org/"> WEB</a> </div>
+            <div id="box2" class="box"> <a href="https://www.w3schools.com/html/"> HTML</a> </div>
+            <div id="box3" class="box"><a href="https://www.w3schools.com/Css/"> CSS </a> </div>
+            <div id="box4" class="box"><a href="https://www.w3schools.com/css/css3_animations.asp">ANIMATION</a></div>
+            <div id="box5" class="box"><a href="https://www.w3schools.com/css/css_position.asp">POSITION</a> </div>
+            <div id="box6" class="box"> 
+                <div id="bolinha1"><a href="https://www.w3schools.com/csS/css3_flexbox.asp#:~:text=Flexbox%20is%20short%20for%20the%EE%80%80%20Flexible%20Box%20Layout"> FLEX</a></div>
+                <div id="bolinha2"></div>
+                <div id="bolinha3"></div>
+                <div id="bolinha4"></div>
+                
+            </div>
+            <div id="box7" class="box"><a href="https://www.w3schools.com/css/css_grid.asp">GRID</a></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:grid;
+              height: 100vh;
+
+            grid-template-columns:1fr 3fr 1fr;
+            grid-template-rows:  1fr 1fr 5fr 1fr 1fr;
+            grid-template-areas: 
+                            "header header header"
+                            "lefts  banner rights"
+                            "lefts  main   rights"
+                            "lefts  low    rights"
+                            "footer footer footer";
+
+        }
+
+        
+            @media (max-width:600px) {
+            .container{
+            display:grid;
+            
+            grid-template-rows: 1fr 1fr 5fr 1fr 1fr;
+            grid-template-columns: 1fr;
+            grid-template-areas:"header "
+                                "banner"
+                                "lefts"
+                                "main"
+                                "rights"
+                                "low"
+                                "footer";
+
+            }
+        }
+    
+        .box{
+            margin:5px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        #box1 { grid-area: header;
+                background-color: lightsalmon; }
+
+        #box2 { grid-area: banner; 
+                background-color: red;}
+
+        #box3 { grid-area: lefts ;
+                background-color: green; }
+
+        #box4 { grid-area: main ; 
+                background-color: lightblue;
+                display: flex;
+                justify-content: center;
+            align-items: center;}
+
+        #box5 { grid-area: rights ;
+                background-color: lightsalmon }
+
+        #box6 { grid-area: low ;
+                background-color: GREEN;
+             display: flex;
+            justify-content: flex-start;
+             align-items: center; }
+
+        #box7 { grid-area: footer; 
+                background-color: lightblue;}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box1">Header</div>
+    <div class="box" id="box2">Banner</div>
+    <div class="box" id="box3">Left Aside</div>
+    <div class="box" id="box4">Main Content</div>
+    <div class="box" id="box5">Right Aside</div>
+    <div class="box" id="box6">Low Content</div>
+    <div class="box" id="box7">Footer</div>
+    </div>
+</body>
+</html>

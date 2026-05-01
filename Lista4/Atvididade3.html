@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+            margin: 0;
+            font-family: sans-serif;
+            color: white;
+            font-weight: bold;
+            font-size: 35px;
+    }
+
+    .container{
+        display: grid;
+        height: 100vh;
+
+        grid-template-columns: 2fr 1fr 2fr 1fr;
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas: "a a . b"
+                             "c d d d";
+
+            gap: 20px;
+            padding: 20px;
+    }
+
+    .box {
+            background-color: grey;
+            color: white;
+            border-radius: 5%;
+            padding: 15px;
+        }
+
+     #box1 { grid-area: a; }
+     #box2 { grid-area: b; }
+     #box3 { grid-area: c; } 
+
+     #box4{ grid-area: d; 
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        
+            gap: 10px;
+            padding: 20px;} 
+
+    .quadradinhos{
+        background-color: darkgray;
+        color: grey;
+        border-radius: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px;
+         
+    }
+
+</style>
+</head>
+
+<body>
+<div class="container">
+    <div class="box" id="box1">A</div>
+    <div class="box" id="box2">B</div>
+    <div class="box" id="box3">C</div>
+
+    <div class="box" id="box4">
+        <div class="quadradinhos" >E</div>
+        <div class="quadradinhos" >F</div>
+        <div class="quadradinhos" >G</div>
+        <div class="quadradinhos" >M</div>
+        <div class="quadradinhos" >I</div>
+        <div class="quadradinhos" >J</div>
+    </div>
+
+</body>
+</html>
