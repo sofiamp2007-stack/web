@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> JS</h1>
+    <div>
+        <p> Tipos Primitivos do JS</p>
+    <ul>
+        <li>String</li>
+        <li>Number</li>
+        <li>Undefined</li>
+        <li>Boolean</li>
+        <li>null</li>
+    </ul>
+
+    <p>Como declarar variáveis</p>
+    <code> 
+        var nome; // cria uma variavel global com identificador nome
+        let idade; // cria uma variavel local com identificador idade
+    </code>
+
+    <p>Tratamento de evento em js</p>
+    <p>Tratamos eventos em js usando <code>addEventListener</code> que vincula uma função a um evento especifico do DOM</p>
+    <p>Exemplo:</p>
+    <code class="language javascript">]
+        document.addEventListener( 'click', function(){
+            console.log('Clipe detectado!')
+        })
+
+    </code>
+     
+    <p>Eventos comuns disponiveis nos Navegadores</p>
+    <ul>
+        <li>click - evento de clipe</li>
+        <li> mouseover - evento do mouse sobre o elemento</li>
+        <li>mouseout - evento do mouse entrando no elemento</li>
+        <li>mousecenter - evento do mouse entrando no elemento</li>
+        <li>keypress - evento de tecla pressionada</li>
+        <li> leydown- evento de tecla pressionada</li>
+        <li> keyup - evento de tecla solta</li>
+        <li> submit - evento de formulario da tag form</li>
+        <li> DOMContentLoaded- evento de envio de formulario da tag form</li>
+        <li>change - evento disparado quando o valor de um elemento de formulário é alterado</li>
+    </ul>
+
+    <p id=" funcaoEmJs"> Funções em JavaScript</p>
+
+    <code>function nomeDaFuncao(){
+        //codigo da função
+    }
+
+    </code>
+
+    </div>
+    <script>
+
+        document.addEventListener('keypress', function(event){
+            console.log("Evento keypress: " +event.key)
+        })
+
+        document.addEventListener('keydown', function(event){
+            console.log("Evento keydown: " +event.key)
+        })
+
+
+        if(true){
+            var nome ="João";
+            let idade=30;
+        }
+
+       // console.log(nome);
+       // console.log(idade);
+
+        function soma(a,b){
+            return a+b;
+        }
+
+        function somaInteiros(a,b){
+                if(Number.isInteger(a) && Number.isInteger(b)){
+                    return(a+b);
+                }
+                else{
+                    throw new Error("Os argumentos devem ser String");
+                }
+        }
+
+        //funcao anonima
+        document.body.addEventListener('mouseover', ()=>{
+            console.log("Mause sobre o corpo do documento")
+        })
+        document.body.addEventListener('mouseout', ()=> {
+            console.log("Mause saiu do documento")
+        })
+        document.body.addEventListener('mouseebter', () => {console.log("Mouse entrou no documento")})
+
+    </script>
+</body>
+</html>
