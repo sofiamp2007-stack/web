@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">O que é JavaScript? </h1>
+    <p id="horaatual"> </p>
+    <p id="criacao">A motivação principal foi dotar a web de uma linguagem de 
+        script acessível e leve, voltada para designers e programadores amadores, com o objetivo de validar formulários e trazer dinamismo e interatividade às páginas web diretamente no navegador.</p>
+    <p id="diferenca">Quem realiza o esforço computacional. No navegador (cliente),
+         o processamento ocorre no próprio dispositivo do usuário. No servidor, o processamento ocorre em um computador remoto (backend) antes de enviar o resultado (HTML, JSON) para a tela do usuário.</p>
+    <p id = "sandbox">O sandbox no navegador é uma camada de segurança que isola as páginas e guias web do seu sistema operacional. Ele funciona como uma "caixa de areia" restrita, impedindo que scripts maliciosos.</p>
+    <p id="objetos globais">Objetos globais são estruturas e funções disponíveis em qualquer lugar do seu código sem precisar importá-los.</p>
+    <ul>
+        <li>Document: É a interface principal que representa a própria página web (o DOM - Document Object Model). Através dele, é possível interagir com toda a estrutura HTML e CSS. </li>
+        <li>Console: Fornece acesso ao console de depuração do navegador</li>
+        <li>Alert: Exibe uma caixa de diálogo simples com uma mensagem e um botão "OK". É um método da interface do usuário que bloqueia a execução do script até que o usuário feche a caixa de diálogo.</li>
+    </ul>
+
+    <script> 
+        console.log ("testando");
+        alert("Seja bem-vindo")
+
+        const agora = new Date();
+        const horaAtual = agora.toLocaleTimeString('pt-BR');
+
+        document.getElementById("horaatual").innerHTML = "Hora atual: " +horaAtual;
+    </script>
+</body>
+</html>
