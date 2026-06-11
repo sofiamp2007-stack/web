@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          body{
+            height: 100vh;
+            display: flex;
+            background-color: aqua;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #container{
+            display: flex;
+            flex-direction: column;
+             gap: 10px;
+        }
+           
+       #alertbotao{
+             display: flex;
+             justify-content: center;
+            align-items: center;
+             border-radius: 10px;
+        }
+    
+        #mudacor{
+             display: flex;
+             justify-content: center;
+            align-items: center;
+             
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="container">
+    <label for ="escrever">Digite algo</label>
+    <input type="text" id="texto">
+
+    <label for="texto">Digite algo</label>
+    <input type="text" id="mudacor">
+
+     <button id="alertbotao">Alert Button</button>
+
+       <select id="colorSelect">
+            <option value="">Escolha uma cor</option>
+            <option value="blue">Azul</option>
+            <option value="green">Verde</option>
+            <option value="red">Vermelho</option>
+        </select>
+
+     </div>
+    <script>
+        
+         document.getElementById("alertbotao").onclick = function() {
+            alert("Seja bem-vindo")
+         }
+
+         
+        document.getElementById("texto").addEventListener('keydown', function(event){
+            console.log("Evento keydown: " +event.key)
+
+        })
+
+        document.getElementById("mudacor").addEventListener("focus", function() {
+              this.style.backgroundColor = "yellow";
+        })
+
+        document.getElementById("mudacor").addEventListener("blur", function() {
+                this.style.backgroundColor = "white";
+        })
+
+          document.body.addEventListener('mouseover', ()=>{
+           console.log("Muda de cor")
+        })
+
+          document.body.addEventListener('mouseout', ()=> {
+            console.log("Volta para a cor normal")
+        })
+
+        document.getElementById("colorSelect").addEventListener("change", function() {
+            document.body.style.backgroundColor = this.value;
+        })
+    </script>
+    
+</body>
+</html>

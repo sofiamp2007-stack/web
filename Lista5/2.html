@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="mostrarTipos()">Mostrar Tipos</button>
+
+    <h3>Tipos das variáveis</h3>
+
+    <p id="pstring"></p>
+    <p id="pnumero">Numero</p>
+    <p id="pboolean">Booleano</p>
+    <p id="pundefined">Indefinido</p>
+    <p id="pnull">Nulo</p>
+    <p id="pobject">Objeto</p>
+    <p id="parray">Array</p>
+
+
+    <p id="op1"></p>
+    <p id="op2"></p>
+    <p id="op3"></p>
+
+    <script>
+        function mostrarTipos(){
+            let texto ="Sofia"
+            let numero = 18
+            let booleano = true
+            let indefinido;
+            let nulo =null
+            let objeto = {nome: "Valeria"}
+            let array = [1,2,3];
+        
+
+               document.getElementById("pstring").innerText =
+                "String: " + typeof texto;
+
+            document.getElementById("pnumero").innerText =
+                "Number: " + typeof numero;
+
+            document.getElementById("pboolean").innerText =
+                "Boolean: " + typeof booleano;
+
+            document.getElementById("pundefined").innerText =
+                "Undefined: " + typeof indefinido;
+
+            document.getElementById("pnull").innerText =
+                "Null: " + typeof nulo;
+
+            document.getElementById("pobject").innerText =
+                "Object: " + typeof objeto;
+
+            document.getElementById("parray").innerText =
+                "Array: " + typeof array;
+
+
+            console.log(texto + numero);
+            console.log(booleano * numero);
+            console.log(numero + booleano);
+
+            document.getElementById("op1").innerText = "'Sofia' + 18 = " + (texto + numero) +
+                " O número é convertido para texto e ocorre concatenação.";
+
+            document.getElementById("op2").innerText ="true * 18 = " + (booleano * numero) +
+                "  true vale 1, então 1 × 18 = 18.";
+
+            document.getElementById("op3").innerText ="18 + true = " + (numero + booleano) +
+                " → true vale 1, então o resultado é 19.";
+
+        }
+    </script>
+
+    
+</body>
+</html>

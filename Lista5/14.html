@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #saida{
+        border: 1px solid black;
+        min-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Captura de teclas do Teclado</h1>
+    <div id="saida"></div>
+
+    <script>
+        let saida = document.getElementById("saida")
+
+         document.addEventListener('keydown', function(event){
+            saida.innerHTML += event.key
+            console.log("Evento keydown: " +event.key)
+
+        })
+
+    </script>
+</body>
+</html>
